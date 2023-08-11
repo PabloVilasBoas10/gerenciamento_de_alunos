@@ -14,7 +14,7 @@ btnRemover.addEventListener('click', () => {
     const alunoRemovido = alunosNoLocalStorage.filter(aluno => aluno.codigo === codigoParaRemover);
 
     if (alunoRemovido) {
-        alunorRemovido.innerText = `Aluno removido: \n Código do aluno removido: \n  ${codigoParaRemover}`
+        alunorRemovido.innerText = `Aluno removido: \n Código do aluno removido: ${codigoParaRemover}`
     }
 
     // Atualiza o localStorage com o novo array após a remoção

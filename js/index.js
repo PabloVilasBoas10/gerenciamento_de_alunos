@@ -1,13 +1,13 @@
 const cadastrarButton = document.querySelector(".cadastrar");
 
-cadastrarButton.addEventListener("click", function () {
-    const codigo = document.querySelector(".codigo").value;
+cadastrarButton.addEventListener("click", () => {
+    const codigo = Number(document.querySelector(".codigo").value);
     const nome = document.querySelector(".nome").value.trim(); // Remove espaços extras
     const sobrenome = document.querySelector(".sobrenome").value;
     const email = document.querySelector(".email").value;
-    const nota1 = document.querySelector(".nota1").value;
-    const nota2 = document.querySelector(".nota2").value;
-    const nota3 = document.querySelector(".nota3").value;
+    const nota1 = Number(document.querySelector(".nota1").value);
+    const nota2 = Number(document.querySelector(".nota2").value);
+    const nota3 = Number(document.querySelector(".nota3").value);
     const ativo = true;
     const div = document.querySelector('.div')
 
@@ -33,16 +33,25 @@ cadastrarButton.addEventListener("click", function () {
         ));
 
         if (alunoExistente) {
+            div.innerText = 'Já existe um aluno com o mesmo código, nome ou email'
             alert("Já existe um aluno com o mesmo código, nome ou email.");
         } else {
             alunosNoLocalStorage.push(aluno);
             localStorage.setItem('alunos', JSON.stringify(alunosNoLocalStorage));
-            div.innerText = `Aluno cadastrado: \n Nome: ${aluno.nome} \n Código: ${aluno.codigo} \n Email: ${aluno.email}`
+            div.innerText = `Aluno cadastrado.`
             console.log("Aluno cadastrado:", aluno);
             alert("Aluno cadastrado com sucesso.");
         }
     } else {
+        div.innerText = "Por favor, preencha todos os campos, incluindo as 3 notas."
+
         alert("Por favor, preencha todos os campos, incluindo as 3 notas.");
     }
+
+    if (!nota1 || !nota2 || !nota3 || !codigo) {
+        div.innerText = "Todas as NOTAS / CÓDIGO devem ser um NÚMERO!"
+        console.log('As notas tem que ser numero!')
+    }
+
 });
 
