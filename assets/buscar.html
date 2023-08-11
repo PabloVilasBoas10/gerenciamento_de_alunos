@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>buscar</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Cadastrar</a></li>
+        <li><a href="media.html">Calcular Média</a></li>
+        <li><a href="remover.html">Remover Aluno</a></li>
+        <li><a href="buscar.html">Buscar Aluno</a></li>
+        <li><a href="desativar.html">Desativar Aluno</a></li>
+        <li>
+          <a href="ativa-desativa.html">Ativar / Desativar</a>
+        </li>
+        <li>
+          <a href="aprov-reprov.html">Aprovado / Reprovado</a>
+        </li>
+      </ul>
+    </nav>
+    <label for="buscar">Buscar Aluno / Código</label>
+    <input
+      type="text"
+      class="buscar"
+      placeholder="Digite o código do aluno: "
+    />
+
+    <button class="btn-buscar ativo">Buscar</button>
+
+    <div class="info-aluno"></div>
+    <script src="../js/buscar.js"></script>
+  </body>
+</html>

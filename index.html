@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Final</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Cadastrar</a></li>
+        <li><a href="assets/media.html">Calcular Média</a></li>
+        <li><a href="assets/remover.html">Remover Aluno</a></li>
+        <li><a href="assets/buscar.html">Buscar Aluno</a></li>
+        <li><a href="assets/desativar.html">Desativar Aluno</a></li>
+        <li>
+          <a href="assets/ativa-desativa.html">Ativar / Desativar</a>
+        </li>
+        <li>
+          <a href="assets/aprov-reprov.html">Aprovado / Reprovado</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Cadastro de Alunos</h1>
+
+    <label for="codigo">Código</label>
+    <input type="text" class="codigo" placeholder="Insira o código" />
+
+    <label for="nome">Nome</label>
+    <input type="text" class="nome" placeholder="Insira o nome" />
+
+    <label for="sobrenome">Sobrenome</label>
+    <input type="text" class="sobrenome" placeholder="Insira o sobrenome" />
+
+    <label for="email">Email</label>
+    <input type="text" class="email" placeholder="Insira o email" />
+
+    <label for="notas">Notas</label>
+    <div class="div-flex">
+      <input type="text" class="nota1" placeholder="Insira a nota" />
+      <input type="text" class="nota2" placeholder="Insira a nota" />
+      <input type="text" class="nota3" placeholder="Insira a nota" />
+    </div>
+
+    <label for="ativo">Aluno Ativo</label>
+    <input type="text" class="aluno-ativo" value="true" disabled />
+
+    <button class="cadastrar ativo">Cadastrar</button>
+
+    <div class="div"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
