@@ -1,7 +1,12 @@
 const btnRemover = document.querySelector('.btn-remover')
 const alunorRemovido = document.querySelector('.aluno-removido')
 
+const btnMobile = document.querySelector('.btn-mobile')
 
+btnMobile.addEventListener('click', () => {
+    const ul = document.querySelector('nav ul')
+    ul.classList.toggle('btn-ativo')
+})
 btnRemover.addEventListener('click', () => {
     const codigoParaRemover = document.querySelector(".remover").value;
 

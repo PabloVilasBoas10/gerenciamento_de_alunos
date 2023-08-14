@@ -1,6 +1,11 @@
 const calcularMedia = document.querySelector('.btn-media')
 const divMedia = document.querySelector('.div-media')
+const btnMobile = document.querySelector('.btn-mobile')
 
+btnMobile.addEventListener('click', () => {
+    const ul = document.querySelector('nav ul')
+    ul.classList.toggle('btn-ativo')
+})
 calcularMedia.addEventListener("click", function () {
     const codigoDoAluno = document.querySelector(".media").value;
 

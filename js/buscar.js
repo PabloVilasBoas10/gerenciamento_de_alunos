@@ -1,7 +1,12 @@
 const btnBuscar = document.querySelector('.btn-buscar')
 const infoAluno = document.querySelector('.info-aluno')
 
+const btnMobile = document.querySelector('.btn-mobile')
 
+btnMobile.addEventListener('click', () => {
+    const ul = document.querySelector('nav ul')
+    ul.classList.toggle('btn-ativo')
+})
 btnBuscar.addEventListener("click", function () {
     const codigoParaBuscar = document.querySelector(".buscar").value;
 

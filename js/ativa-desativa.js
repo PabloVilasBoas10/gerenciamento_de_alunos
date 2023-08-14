@@ -1,6 +1,11 @@
 const listarAtivosButton = document.querySelector('.listarAtivosButton')
 const alunoDesativado = document.querySelector('.aluno-desativado')
+const btnMobile = document.querySelector('.btn-mobile')
 
+btnMobile.addEventListener('click', () => {
+    const ul = document.querySelector('nav ul')
+    ul.classList.toggle('btn-ativo')
+})
 
 listarAtivosButton.addEventListener("click", function () {
     alunoDesativado.innerHTML = "ALUNOS ATIVOS"

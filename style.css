@@ -5,6 +5,20 @@ body {
   background-color: #ecd078;
 }
 
+.btn-mobile {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: monospace;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 nav {
   display: block;
   margin-bottom: 70px;
@@ -18,10 +32,38 @@ nav ul {
   padding: 10px;
   margin: auto 30px;
   gap: 20px;
+  font-size: 50% + 20px;
 }
+
+@media (max-width: 900px) {
+  .btn-mobile {
+    display: block;
+    z-index: 10000;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav ul.btn-ativo {
+    background-color: #f8ebbe;
+    border-radius: 4px;
+    z-index: 1000;
+    top: 50px;
+    left: -9px;
+    display: block;
+    position: fixed;
+    border: 1px solid #000;
+  }
+
+  nav ul.btn-ativo li {
+    margin-bottom: 20px;
+  }
+}
+/* @media(max-wid) */
 
 nav ul li,
 nav ul li a {
+  margin: 10px 0;
   list-style: none;
   text-decoration: none;
   color: #000;

@@ -1,5 +1,12 @@
 const cadastrarButton = document.querySelector(".cadastrar");
 
+const btnMobile = document.querySelector('.btn-mobile')
+
+btnMobile.addEventListener('click', () => {
+    const ul = document.querySelector('nav ul')
+    ul.classList.toggle('btn-ativo')
+})
+
 cadastrarButton.addEventListener("click", () => {
     const codigo = document.querySelector(".codigo").value;
     const nome = document.querySelector(".nome").value.trim(); // Remove espaços extras

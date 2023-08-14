@@ -1,7 +1,12 @@
 const btnDesativar = document.querySelector('.btn-desativar')
 const btnAtivar = document.querySelector('.btn-ativar')
 const divDesativar = document.querySelector('.div-desativar')
+const btnMobile = document.querySelector('.btn-mobile')
 
+btnMobile.addEventListener('click', () => {
+    const ul = document.querySelector('nav ul')
+    ul.classList.toggle('btn-ativo')
+})
 btnDesativar.addEventListener("click", () => {
     const codigoDoAluno = document.querySelector(".desativar").value;
 

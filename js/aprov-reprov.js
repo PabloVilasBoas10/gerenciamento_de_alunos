@@ -1,5 +1,12 @@
 const listarAprovadosButton = document.querySelector('.listarAprovadosButton')
 
+const btnMobile = document.querySelector('.btn-mobile')
+
+btnMobile.addEventListener('click', () => {
+    const ul = document.querySelector('nav ul')
+    ul.classList.toggle('btn-ativo')
+})
+
 const reprovadoAprovado = document.querySelector('.reprovado-aprovado')
 
 listarAprovadosButton.addEventListener("click", function () {
