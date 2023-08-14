@@ -52,14 +52,13 @@ nav ul {
     left: -9px;
     display: block;
     position: fixed;
-    border: 1px solid #000;
+    border: 1px solid #c02942;
   }
 
   nav ul.btn-ativo li {
     margin-bottom: 20px;
   }
 }
-/* @media(max-wid) */
 
 nav ul li,
 nav ul li a {
