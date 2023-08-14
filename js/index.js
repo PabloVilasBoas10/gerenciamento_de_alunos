@@ -1,7 +1,7 @@
 const cadastrarButton = document.querySelector(".cadastrar");
 
 cadastrarButton.addEventListener("click", () => {
-    const codigo = Number(document.querySelector(".codigo").value);
+    const codigo = document.querySelector(".codigo").value;
     const nome = document.querySelector(".nome").value.trim(); // Remove espaços extras
     const sobrenome = document.querySelector(".sobrenome").value;
     const email = document.querySelector(".email").value;
