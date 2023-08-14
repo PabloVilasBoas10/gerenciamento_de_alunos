@@ -7,6 +7,7 @@ btnMobile.addEventListener('click', () => {
     const ul = document.querySelector('nav ul')
     ul.classList.toggle('btn-ativo')
 })
+
 btnBuscar.addEventListener("click", function () {
     const codigoParaBuscar = document.querySelector(".buscar").value;
 
