@@ -23,7 +23,9 @@ btnBuscar.addEventListener("click", function () {
 
     if (alunoEncontrado) {
         console.log("Aluno encontrado:", alunoEncontrado);
+
         infoAluno.innerText = `Aluno cadastrado: \n Código: ${alunoEncontrado.codigo} \n Nome: ${alunoEncontrado.nome} \n Sobrenome: ${alunoEncontrado.sobrenome} \n Email: ${alunoEncontrado.email}\n Notas: ${alunoEncontrado.notas}, \n Ativo: ${alunoEncontrado.ativo}`
+
     } else {
         infoAluno.innerText = "Aluno não encontrado."
         console.log("Aluno não encontrado.");

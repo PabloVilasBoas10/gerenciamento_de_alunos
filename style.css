@@ -92,6 +92,7 @@ label {
 }
 
 input {
+  font-weight: bold;
   display: block;
   margin: 5px auto;
   width: 40%;

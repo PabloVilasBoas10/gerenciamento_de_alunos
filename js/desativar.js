@@ -53,7 +53,7 @@ btnAtivar.addEventListener('click', () => {
         localStorage.setItem('alunos', JSON.stringify(alunosNoLocalStorage)); // Atualiza o localStorage
         console.log("Aluno ativado:", alunoEncontrado);
 
-        divDesativar.innerText = `Aluno desativao: \n Código: ${alunoEncontrado.codigo} \n Nome: ${alunoEncontrado.nome} \n Sobrenome: ${alunoEncontrado.sobrenome} \n Email: ${alunoEncontrado.email}\n Notas: ${alunoEncontrado.notas}, \n Ativo: ${alunoEncontrado.ativo}`
+        divDesativar.innerText = `Aluno desativado: \n Código: ${alunoEncontrado.codigo} \n Nome: ${alunoEncontrado.nome} \n Sobrenome: ${alunoEncontrado.sobrenome} \n Email: ${alunoEncontrado.email}\n Notas: ${alunoEncontrado.notas}, \n Ativo: ${alunoEncontrado.ativo}`
 
     } else {
         console.log("Aluno não encontrado.");
